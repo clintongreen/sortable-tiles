@@ -8,12 +8,6 @@ app.controller('tileController', ['$scope', function($scope) {
     Array.from(Array(end - start + 1).keys()).map(i => i + start)
   );
 
-  // dragenter listener
-  function dragenter(e) {
-    console.log("dragenter just fired yo");
-    e.preventDefault();
-  }
-
  // tiles array
  $scope.tiles = range(1,30);
 
@@ -30,7 +24,14 @@ app.controller('tileController', ['$scope', function($scope) {
    // Callback after item is dropped
    stop:function(list, dropped_index){
      list[ dropped_index].tile += " Dropped";
+   },
+
+   // dragenter listener
+   sortable.handleDragEnter = function(e) {
+     console.log("dragenter just fired yo");
+     e.preventDefault();
    }
+
  };
 
 }]);
