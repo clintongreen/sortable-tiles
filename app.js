@@ -8,6 +8,12 @@ app.controller('tileController', ['$scope', function($scope) {
     Array.from(Array(end - start + 1).keys()).map(i => i + start)
   );
 
+  // dragenter listener
+  function dragenter(e) {
+    console.log("dragenter just fired yo");
+    e.preventDefault();
+  }
+
  // tiles array
  $scope.tiles = range(1,30);
 
