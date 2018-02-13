@@ -94,6 +94,12 @@
       MobileDragDrop.polyfill({
         // use this to make use of the scroll behaviour
         dragImageTranslateOverride: MobileDragDrop.scrollBehaviourDragImageTranslateOverride
+        
+        // dragenter listener
+        function dragenter(e) {
+          console.log("dragenter just fired yo");
+          e.preventDefault();
+        }
       });
     </script>
     <script src="app.js"></script>
