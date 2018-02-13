@@ -24,12 +24,6 @@ app.controller('tileController', ['$scope', function($scope) {
    // Callback after item is dropped
    stop:function(list, dropped_index){
      list[ dropped_index].tile += " Dropped";
-   },
-
-   // dragenter listener
-   sortable.handleDragEnter = function(e) {
-     console.log("dragenter just fired yo");
-     e.preventDefault();
    }
 
  };
