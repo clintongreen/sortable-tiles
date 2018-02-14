@@ -3,8 +3,6 @@ const app = angular.module('app', ['html5.sortable']);
 
 app.controller('tileController', ['$scope', function($scope) {
 
-  window.addEventListener( 'touchmove', function() {});
-
   // range function to populate number of tiles
   const range = (start, end) => (
     Array.from(Array(end - start + 1).keys()).map(i => i + start)
