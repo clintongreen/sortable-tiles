@@ -8,72 +8,7 @@
     <link rel="icon" href="https://www.results.com/favicon.ico">
     <title>Senior Front End Developer Test</title>
 
-    <style>
-      /* Prevent the text contents of draggable elements from being selectable. */
-      [draggable] {
-        -moz-user-select: none;
-        -khtml-user-select: none;
-        -webkit-user-select: none;
-        user-select: none;
-        /* Required to make elements draggable in old WebKit */
-        -khtml-user-drag: element;
-        -webkit-user-drag: element;
-      }
-
-      .container{
-        margin: 10px 0;
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
-      }
-      .tile{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 40vw;
-        max-width: 200px;
-        min-width: 100px;
-        height: 40vw;
-        max-height: 200px;
-        min-height: 100px;
-        margin: 10px;
-        border: 2px solid #444;
-        box-sizing: border-box;
-        color: #444;
-        font-size: 6rem;
-        font-family: sans-serif;
-        background-color: white;
-        cursor: move;
-      }
-      @media(min-width: 525px) and (max-width: 767px){
-        .tile{
-          width: 27vw;
-          height: 27vw;
-        }
-      }
-      @media(min-width: 768px) and (max-width: 991px){
-        .tile{
-          width: 20vw;
-          height: 20vw;
-        }
-      }
-      @media(min-width: 992px){
-        .tile{
-          width: 33.3vw;
-          height: 33.3vw;
-        }
-      }
-      /* html5 sortable styles  */
-      .html5-sortable .over, .droppable.over{
-        background-color: #ddd;
-        color: #ddd;
-      }
-
-      /* hide content until angular loads */
-      [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
-        display: none !important;
-      }
-    </style>
+    <link rel="stylesheet" href="style.css">
 
   </head>
 
