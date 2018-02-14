@@ -19,6 +19,9 @@ app.controller('tileController', ['$scope', function($scope) {
      for ( var i = 0; i < model.length; i++ ){
        model[i].tile +=" (constructed)";
      }
+     handleDragEnter = function(e) {
+       e.preventDefault(); // Allows us to drop on mobile
+     };
    },
 
    // Callback after item is dropped
