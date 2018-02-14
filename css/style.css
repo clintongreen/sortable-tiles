@@ -65,10 +65,3 @@
   background-color: #ddd;
   color: #ddd;
 }
-
-/* ios 10 scrolling bug */
-/*.scrolling-content {
-  overflow-y: scroll;
-  -webkit-overflow-scrolling: touch;
-  height:100%;
-}*/
