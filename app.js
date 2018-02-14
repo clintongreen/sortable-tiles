@@ -19,11 +19,11 @@ app.controller('tileController', ['$scope', function($scope) {
  // HTML5 Sortable options
  $scope.sortable_option = {
 
-   start:function(){
-     sortable.handleDragEnter = function(e) {
+   handleDragEnter:function(e){
+     // sortable.handleDragEnter = function(e) {
        e.preventDefault(); // Allows us to drop on mobile
        console.log('tgisis jsifj')
-     };
+     // };
    },
 
    // Construct method before sortable code
