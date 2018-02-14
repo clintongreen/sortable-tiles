@@ -67,8 +67,8 @@
 }
 
 /* ios 10 scrolling bug */
-.scrolling-content {
+/*.scrolling-content {
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
   height:100%;
-}
+}*/
