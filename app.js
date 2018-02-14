@@ -8,20 +8,29 @@ app.controller('tileController', ['$scope', function($scope) {
     Array.from(Array(end - start + 1).keys()).map(i => i + start)
   );
 
+  // app.html5.sortable.handleDragEnter = function(e) {
+  //   e.preventDefault(); // Allows us to drop on mobile
+  //   console.log('djdjdjdj')
+  // };
+
  // tiles array
  $scope.tiles = range(1,30);
 
  // HTML5 Sortable options
  $scope.sortable_option = {
 
+   start:function(){
+     sortable.handleDragEnter = function(e) {
+       e.preventDefault(); // Allows us to drop on mobile
+       console.log('tgisis jsifj')
+     };
+   },
+
    // Construct method before sortable code
    construct:function(model){
      for ( var i = 0; i < model.length; i++ ){
        model[i].tile +=" (constructed)";
      }
-     handleDragEnter = function(e) {
-       e.preventDefault(); // Allows us to drop on mobile
-     };
    },
 
    // Callback after item is dropped
