@@ -8,7 +8,7 @@ app.controller('tileController', ['$scope', function($scope) {
     Array.from(Array(end - start + 1).keys()).map(i => i + start)
   );
 
- // tiles array
+ // make tiles array
  $scope.tiles = range(1,30);
 
  // HTML5 Sortable options
