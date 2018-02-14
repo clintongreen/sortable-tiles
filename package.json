@@ -18,6 +18,7 @@
   "homepage": "https://github.com/clintongreen/sortable-tiles#readme",
   "dependencies": {
     "angular": "^1.6.9",
+    "drag-drop-webkit-mobile": "^1.4.1",
     "html5-sortable-angularjs": "0.0.1",
     "mobile-drag-drop": "^2.3.0-rc.0"
   }
