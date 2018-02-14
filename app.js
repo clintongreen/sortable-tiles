@@ -8,6 +8,11 @@ app.controller('tileController', ['$scope', function($scope) {
     Array.from(Array(end - start + 1).keys()).map(i => i + start)
   );
 
+  // dragenter listener
+(event)=> {
+    event.preventDefault();
+}
+
   // app.html5.sortable.handleDragEnter = function(e) {
   //   e.preventDefault(); // Allows us to drop on mobile
   //   console.log('djdjdjdj')
@@ -19,12 +24,17 @@ app.controller('tileController', ['$scope', function($scope) {
  // HTML5 Sortable options
  $scope.sortable_option = {
 
-   handleDragEnter:function(e){
-     // sortable.handleDragEnter = function(e) {
-       e.preventDefault(); // Allows us to drop on mobile
-       console.log('tgisis jsifj')
-     // };
-   },
+   // handleDragEnter:function(e){
+   //   // sortable.handleDragEnter = function(e) {
+   //     e.preventDefault(); // Allows us to drop on mobile
+   //     console.log('tgisis jsifj')
+   //   // };
+   // },
+
+   // start:function(handleDragEnter){
+   //   console.log('hellop kij')
+   // },
+
 
    // Construct method before sortable code
    construct:function(model){
