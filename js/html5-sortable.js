@@ -73,7 +73,6 @@ sortable_app.directive('htmlSortable', ["$parse", "$timeout", "$log", "$window",
       };
 
       sortable.handleDragEnter = function(e) {
-        // e.preventDefault(); // Allows us to drop on mobile
         if ( !this.classList.contains('over') ){
           this.classList.add('over');
         }
